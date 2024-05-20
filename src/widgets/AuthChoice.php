@@ -5,7 +5,7 @@
  * @license https://www.yiiframework.com/license/
  */
 
-namespace yii\authclient\widgets;
+namespace algsupport\authclient\widgets;
 
 use yii\base\InvalidConfigException;
 use yii\base\Widget;
@@ -13,18 +13,18 @@ use Yii;
 use yii\helpers\Json;
 use yii\helpers\Url;
 use yii\helpers\Html;
-use yii\authclient\ClientInterface;
+use algsupport\authclient\ClientInterface;
 
 /**
  * AuthChoice prints buttons for authentication via various auth clients.
  * It opens a popup window for the client authentication process.
- * By default this widget relies on presence of [[\yii\authclient\Collection]] among application components
+ * By default this widget relies on presence of [[\algsupport\authclient\Collection]] among application components
  * to get auth clients information.
  *
  * Example:
  *
  * ```php
- * <?= yii\authclient\widgets\AuthChoice::widget([
+ * <?= algsupport\authclient\widgets\AuthChoice::widget([
  *     'baseAuthUrl' => ['site/auth']
  * ]); ?>
  * ```
@@ -35,7 +35,7 @@ use yii\authclient\ClientInterface;
  *
  * ```php
  * <?php
- * use yii\authclient\widgets\AuthChoice;
+ * use algsupport\authclient\widgets\AuthChoice;
  * ?>
  * <?php $authAuthChoice = AuthChoice::begin([
  *     'baseAuthUrl' => ['site/auth']
@@ -55,7 +55,7 @@ use yii\authclient\ClientInterface;
  *  - widget: array, configuration for the widget, which should be used to render a client link;
  *    such widget should be a subclass of [[AuthChoiceItem]].
  *
- * @see \yii\authclient\AuthAction
+ * @see \algsupport\authclient\AuthAction
  *
  * @property-read array $baseAuthUrl Base auth URL configuration.
  * @property-read ClientInterface[] $clients Auth providers.
@@ -150,7 +150,7 @@ class AuthChoice extends Widget
      */
     protected function defaultClients()
     {
-        /* @var $collection \yii\authclient\Collection */
+        /* @var $collection \algsupport\authclient\Collection */
         $collection = Yii::$app->get($this->clientCollection);
 
         return $collection->getClients();

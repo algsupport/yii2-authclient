@@ -5,9 +5,9 @@
  * @license https://www.yiiframework.com/license/
  */
 
-namespace yii\authclient\clients;
+namespace algsupport\authclient\clients;
 
-use yii\authclient\OAuth1;
+use algsupport\authclient\OAuth1;
 
 /**
  * Twitter allows authentication via Twitter OAuth.
@@ -19,10 +19,10 @@ use yii\authclient\OAuth1;
  * ```php
  * 'components' => [
  *     'authClientCollection' => [
- *         'class' => 'yii\authclient\Collection',
+ *         'class' => 'algsupport\authclient\Collection',
  *         'clients' => [
  *             'twitter' => [
- *                 'class' => 'yii\authclient\clients\Twitter',
+ *                 'class' => 'algsupport\authclient\clients\Twitter',
  *                 'attributeParams' => [
  *                     'include_email' => 'true'
  *                 ],

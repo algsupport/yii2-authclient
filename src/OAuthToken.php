@@ -5,7 +5,7 @@
  * @license https://www.yiiframework.com/license/
  */
 
-namespace yii\authclient;
+namespace algsupport\authclient;
 
 use yii\base\BaseObject;
 use yii\helpers\ArrayHelper;

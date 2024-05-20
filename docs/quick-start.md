@@ -3,7 +3,7 @@ Quick Start
 
 ## Adding action to controller
 
-Next step is to add [[yii\authclient\AuthAction]] to a web controller and provide a `successCallback` implementation,
+Next step is to add [[algsupport\authclient\AuthAction]] to a web controller and provide a `successCallback` implementation,
 which is suitable for your needs. Typically, final controller code may look like following:
 
 ```php
@@ -15,7 +15,7 @@ class SiteController extends Controller
     {
         return [
             'auth' => [
-                'class' => 'yii\authclient\AuthAction',
+                'class' => 'algsupport\authclient\AuthAction',
                 'successCallback' => [$this, 'onAuthSuccess'],
             ],
         ];
@@ -39,7 +39,7 @@ namespace app\components;
 use app\models\Auth;
 use app\models\User;
 use Yii;
-use yii\authclient\ClientInterface;
+use algsupport\authclient\ClientInterface;
 use yii\helpers\ArrayHelper;
 
 /**
@@ -183,7 +183,7 @@ we can retrieve information received. In our case we'd like to:
 
 ### Auth client basic structure
 
-Although, all clients are different they share same basic interface [[yii\authclient\ClientInterface]],
+Although, all clients are different they share same basic interface [[algsupport\authclient\ClientInterface]],
 which governs common API.
 
 Each client has some descriptive data, which can be used for different purposes:
@@ -205,20 +205,20 @@ names.
 
 Defining list of attributes, which external auth provider should return, depends on client type:
 
-- [[yii\authclient\OpenId]]: combination of `requiredAttributes` and `optionalAttributes`.
-- [[yii\authclient\OAuth1]] and [[yii\authclient\OAuth2]]: field `scope`, note that different
+- [[algsupport\authclient\OpenId]]: combination of `requiredAttributes` and `optionalAttributes`.
+- [[algsupport\authclient\OAuth1]] and [[algsupport\authclient\OAuth2]]: field `scope`, note that different
   providers use different formats for the scope.
 
 > Tip: If you are using several clients, you can unify the structure of the attributes, which they return,
-  using [[yii\authclient\BaseClient::$normalizeUserAttributeMap]].
+  using [[algsupport\authclient\BaseClient::$normalizeUserAttributeMap]].
 
 
 ## Adding widget to login view
 
-There's ready to use [[yii\authclient\widgets\AuthChoice]] widget to use in views:
+There's ready to use [[algsupport\authclient\widgets\AuthChoice]] widget to use in views:
 
 ```php
-<?= yii\authclient\widgets\AuthChoice::widget([
+<?= algsupport\authclient\widgets\AuthChoice::widget([
      'baseAuthUrl' => ['site/auth'],
      'popupMode' => false,
 ]) ?>
@@ -228,4 +228,4 @@ There's ready to use [[yii\authclient\widgets\AuthChoice]] widget to use in view
 
 Recently due to potential changes in GitHub callback handling, ensure that `authclient=github` is present in URL query param in Authorization Callback URL to avoid 404 error thrown when GitHub redirects user back to our app.
 
-Example: Let's say my app is at `https://example.com`. In order to implement "Login with GitHub" feature into my app, I will create a new Oauth app for my `example.com` at https://github.com/settings/applications/new. In input field "Authorization callback URL" if I put `https://example.com/site/auth`, then I will get 404 error thrown by [`run()`](https://github.com/yiisoft/yii2-authclient/blob/master/src/AuthAction.php#L213) method. In order to fix this issue, above query param is required. So putting the "Authorization callback URL" value to `https://example.com/site/auth?authclient=github` is required.
+Example: Let's say my app is at `https://example.com`. In order to implement "Login with GitHub" feature into my app, I will create a new Oauth app for my `example.com` at https://github.com/settings/applications/new. In input field "Authorization callback URL" if I put `https://example.com/site/auth`, then I will get 404 error thrown by [`run()`](https://github.com/algsupport/yii2-authclient/blob/master/src/AuthAction.php#L213) method. In order to fix this issue, above query param is required. So putting the "Authorization callback URL" value to `https://example.com/site/auth?authclient=github` is required.

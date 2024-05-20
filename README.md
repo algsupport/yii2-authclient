@@ -9,13 +9,13 @@
 This extension adds [OpenID](https://openid.net/), [OAuth](https://oauth.net/), [OAuth2](https://oauth.net/2/) and [OpenId Connect](https://openid.net/connect/)
 consumers for the [Yii framework 2.0](https://www.yiiframework.com).
 
-For license information check the [LICENSE](https://github.com/yiisoft/yii2-authclient/blob/master/LICENSE.md)-file.
+For license information check the [LICENSE](https://github.com/algsupport/yii2-authclient/blob/master/LICENSE.md)-file.
 
-Documentation is at [docs/guide/README.md](https://github.com/yiisoft/yii2-authclient/blob/master/docs/guide/README.md).
+Documentation is at [docs/guide/README.md](https://github.com/algsupport/yii2-authclient/blob/master/docs/guide/README.md).
 
-[![Latest Stable Version](https://poser.pugx.org/yiisoft/yii2-authclient/v/stable.png)](https://packagist.org/packages/yiisoft/yii2-authclient)
-[![Total Downloads](https://poser.pugx.org/yiisoft/yii2-authclient/downloads.png)](https://packagist.org/packages/yiisoft/yii2-authclient)
-[![Build Status](https://github.com/yiisoft/yii2-authclient/workflows/build/badge.svg)](https://github.com/yiisoft/yii2-authclient/actions)
+[![Latest Stable Version](https://poser.pugx.org/algsupport/yii2-authclient/v/stable.png)](https://packagist.org/packages/algsupport/yii2-authclient)
+[![Total Downloads](https://poser.pugx.org/algsupport/yii2-authclient/downloads.png)](https://packagist.org/packages/algsupport/yii2-authclient)
+[![Build Status](https://github.com/algsupport/yii2-authclient/workflows/build/badge.svg)](https://github.com/algsupport/yii2-authclient/actions)
 
 Installation
 ------------
@@ -25,13 +25,13 @@ The preferred way to install this extension is through [composer](https://getcom
 Either run
 
 ```
-composer require --prefer-dist yiisoft/yii2-authclient
+composer require --prefer-dist algsupport/yii2-authclient
 ```
 
 or add
 
 ```json
-"yiisoft/yii2-authclient": "~2.2.0"
+"algsupport/yii2-authclient": "~2.2.0"
 ```
 
 to the `require` section of your composer.json.

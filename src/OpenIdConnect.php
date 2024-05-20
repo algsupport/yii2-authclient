@@ -5,7 +5,7 @@
  * @license https://www.yiiframework.com/license/
  */
 
-namespace yii\authclient;
+namespace algsupport\authclient;
 
 use Jose\Component\Checker\AlgorithmChecker;
 use Jose\Component\Checker\HeaderCheckerManager;
@@ -17,7 +17,7 @@ use Jose\Component\Signature\JWSVerifier;
 use Jose\Component\Signature\Serializer\CompactSerializer;
 use Jose\Component\Signature\Serializer\JWSSerializerManager;
 use Yii;
-use yii\authclient\signature\HmacSha;
+use algsupport\authclient\signature\HmacSha;
 use yii\base\InvalidConfigException;
 use yii\caching\Cache;
 use yii\di\Instance;
@@ -33,10 +33,10 @@ use yii\web\HttpException;
  * ```php
  * 'components' => [
  *     'authClientCollection' => [
- *         'class' => 'yii\authclient\Collection',
+ *         'class' => 'algsupport\authclient\Collection',
  *         'clients' => [
  *             'google' => [
- *                 'class' => 'yii\authclient\OpenIdConnect',
+ *                 'class' => 'algsupport\authclient\OpenIdConnect',
  *                 'issuerUrl' => 'https://accounts.google.com',
  *                 'clientId' => 'google_client_id',
  *                 'clientSecret' => 'google_client_secret',

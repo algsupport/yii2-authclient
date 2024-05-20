@@ -5,9 +5,9 @@
  * @license https://www.yiiframework.com/license/
  */
 
-namespace yii\authclient\clients;
+namespace algsupport\authclient\clients;
 
-use yii\authclient\OAuth2;
+use algsupport\authclient\OAuth2;
 use yii\helpers\Json;
 
 /**
@@ -20,10 +20,10 @@ use yii\helpers\Json;
  * ```php
  * 'components' => [
  *     'authClientCollection' => [
- *         'class' => 'yii\authclient\Collection',
+ *         'class' => 'algsupport\authclient\Collection',
  *         'clients' => [
  *             'vkontakte' => [
- *                 'class' => 'yii\authclient\clients\VKontakte',
+ *                 'class' => 'algsupport\authclient\clients\VKontakte',
  *                 'clientId' => 'vkontakte_client_id',
  *                 'clientSecret' => 'vkontakte_client_secret',
  *                 'scope' => 'email'

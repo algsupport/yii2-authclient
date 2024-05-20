@@ -5,7 +5,7 @@
  * @license https://www.yiiframework.com/license/
  */
 
-namespace yii\authclient;
+namespace algsupport\authclient;
 
 /**
  * StateStorageInterface is an interface for Auth client state storage.

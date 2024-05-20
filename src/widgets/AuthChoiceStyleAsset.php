@@ -5,7 +5,7 @@
  * @license https://www.yiiframework.com/license/
  */
 
-namespace yii\authclient\widgets;
+namespace algsupport\authclient\widgets;
 
 use yii\web\AssetBundle;
 

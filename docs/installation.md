@@ -6,13 +6,13 @@ Installation
 In order to install extension use Composer. Either run
 
 ```
-composer require --prefer-dist yiisoft/yii2-authclient "~2.1.0"
+composer require --prefer-dist algsupport/yii2-authclient "~2.1.0"
 ```
 
 or add
 
 ```json
-"yiisoft/yii2-authclient": "~2.1.0"
+"algsupport/yii2-authclient": "~2.1.0"
 ```
 
 to the `require` section of your composer.json.
@@ -25,15 +25,15 @@ After extension is installed you need to setup auth client collection applicatio
 return [
     'components' => [
         'authClientCollection' => [
-            'class' => 'yii\authclient\Collection',
+            'class' => 'algsupport\authclient\Collection',
             'clients' => [
                 'google' => [
-                    'class' => 'yii\authclient\clients\Google',
+                    'class' => 'algsupport\authclient\clients\Google',
                     'clientId' => 'google_client_id',
                     'clientSecret' => 'google_client_secret',
                 ],
                 'facebook' => [
-                    'class' => 'yii\authclient\clients\Facebook',
+                    'class' => 'algsupport\authclient\clients\Facebook',
                     'clientId' => 'facebook_client_id',
                     'clientSecret' => 'facebook_client_secret',
                 ],
@@ -48,14 +48,14 @@ return [
 
 Out of the box the following clients are provided:
 
-- [[\yii\authclient\clients\Facebook|Facebook]].
-- [[yii\authclient\clients\GitHub|GitHub]].
-- Google (via [[yii\authclient\clients\Google|OAuth]] and [[yii\authclient\clients\GoogleHybrid|OAuth Hybrid]]).
-- [[yii\authclient\clients\LinkedIn|LinkedIn]].
-- [[yii\authclient\clients\Live|Microsoft Live]].
-- [[yii\authclient\clients\Twitter|Twitter]].
-- [[yii\authclient\clients\VKontakte|VKontakte]].
-- [[yii\authclient\clients\Yandex|Yandex]].
+- [[\algsupport\authclient\clients\Facebook|Facebook]].
+- [[algsupport\authclient\clients\GitHub|GitHub]].
+- Google (via [[algsupport\authclient\clients\Google|OAuth]] and [[algsupport\authclient\clients\GoogleHybrid|OAuth Hybrid]]).
+- [[algsupport\authclient\clients\LinkedIn|LinkedIn]].
+- [[algsupport\authclient\clients\Live|Microsoft Live]].
+- [[algsupport\authclient\clients\Twitter|Twitter]].
+- [[algsupport\authclient\clients\VKontakte|VKontakte]].
+- [[algsupport\authclient\clients\Yandex|Yandex]].
 
 Configuration for each client is a bit different. For OAuth it's required to get client ID and secret key from
 the service you're going to use. For OpenID it works out of the box in most cases.

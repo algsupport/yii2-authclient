@@ -5,9 +5,9 @@
  * @license https://www.yiiframework.com/license/
  */
 
-namespace yii\authclient\clients;
+namespace algsupport\authclient\clients;
 
-use yii\authclient\OAuth2;
+use algsupport\authclient\OAuth2;
 
 /**
  * Generic client that allows authentication via OAuth 2.0.
@@ -17,10 +17,10 @@ use yii\authclient\OAuth2;
  * ```php
  * 'components' => [
  *     'authClientCollection' => [
- *         'class' => 'yii\authclient\Collection',
+ *         'class' => 'algsupport\authclient\Collection',
  *         'clients' => [
  *             'oauth2' => [
- *                 'class' => 'yii\authclient\clients\Oauth2Client',
+ *                 'class' => 'algsupport\authclient\clients\Oauth2Client',
  *                 'authUrl' => 'https://oauth2service.com/oauth2/authorize',
  *                 'tokenUrl' => 'https://oauth2service.com/oauth2/authorize',
  *                 'apiBaseUrl' => 'https://oauth2service.com/api',

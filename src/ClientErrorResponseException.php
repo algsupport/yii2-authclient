@@ -5,7 +5,7 @@
  * @license https://www.yiiframework.com/license/
  */
 
-namespace yii\authclient;
+namespace algsupport\authclient;
 
 /**
  * ClientErrorResponseException represents an exception caused by a "client error" server response status code (4xx).

@@ -5,9 +5,9 @@
  * @license https://www.yiiframework.com/license/
  */
 
-namespace yii\authclient\clients;
+namespace algsupport\authclient\clients;
 
-use yii\authclient\OAuth2;
+use algsupport\authclient\OAuth2;
 use yii\web\HttpException;
 use Yii;
 
@@ -21,10 +21,10 @@ use Yii;
  * ```php
  * 'components' => [
  *     'authClientCollection' => [
- *         'class' => 'yii\authclient\Collection',
+ *         'class' => 'algsupport\authclient\Collection',
  *         'clients' => [
  *             'linkedin' => [
- *                 'class' => 'yii\authclient\clients\LinkedIn',
+ *                 'class' => 'algsupport\authclient\clients\LinkedIn',
  *                 'clientId' => 'linkedin_client_id',
  *                 'clientSecret' => 'linkedin_client_secret',
  *             ],

@@ -5,10 +5,10 @@
  * @license https://www.yiiframework.com/license/
  */
 
-namespace yii\authclient;
+namespace algsupport\authclient;
 
 use Yii;
-use yii\authclient\StateStorageInterface;
+use algsupport\authclient\StateStorageInterface;
 use yii\caching\Cache;
 use yii\base\Component;
 use yii\di\Instance;

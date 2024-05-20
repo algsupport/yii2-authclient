@@ -5,7 +5,7 @@
  * @license https://www.yiiframework.com/license/
  */
 
-namespace yii\authclient\signature;
+namespace algsupport\authclient\signature;
 
 /**
  * @deprecated

@@ -2,17 +2,17 @@ OpenID Connect
 ==============
 
 This extension provides support for [OpenId Connect](https://openid.net/connect/) authentication protocol via
-[[\yii\authclient\OpenIdConnect]] class.
+[[\algsupport\authclient\OpenIdConnect]] class.
 
 Application configuration example:
 
 ```php
 'components' => [
     'authClientCollection' => [
-        'class' => 'yii\authclient\Collection',
+        'class' => 'algsupport\authclient\Collection',
         'clients' => [
             'google' => [
-                'class' => 'yii\authclient\OpenIdConnect',
+                'class' => 'algsupport\authclient\OpenIdConnect',
                 'issuerUrl' => 'https://accounts.google.com',
                 'clientId' => 'google_client_id',
                 'clientSecret' => 'google_client_secret',
@@ -47,5 +47,5 @@ or add
 
 to the `require` section of your composer.json.
 
-> Note: if you are using well-trusted 'OpenID Connect' provider, you may disable [[\yii\authclient\OpenIdConnect::$validateJws]],
+> Note: if you are using well-trusted 'OpenID Connect' provider, you may disable [[\algsupport\authclient\OpenIdConnect::$validateJws]],
   making installation of `web-token` library redundant, however it is not recommended as it violates the protocol specification.
