@@ -27,7 +27,7 @@
         }
     ],
     "autoload": {
-        "psr-4": { "yii\\authclient\\": "src" }
+        "psr-4": { "algsupport\\authclient\\": "src" }
     },
     "config": {
         "allow-plugins": {
