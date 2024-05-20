@@ -15,7 +15,6 @@ Documentation is at [docs/guide/README.md](https://github.com/algsupport/yii2-au
 
 [![Latest Stable Version](https://poser.pugx.org/algsupport/yii2-authclient/v/stable.png)](https://packagist.org/packages/algsupport/yii2-authclient)
 [![Total Downloads](https://poser.pugx.org/algsupport/yii2-authclient/downloads.png)](https://packagist.org/packages/algsupport/yii2-authclient)
-[![Build Status](https://github.com/algsupport/yii2-authclient/workflows/build/badge.svg)](https://github.com/algsupport/yii2-authclient/actions)
 
 Installation
 ------------
